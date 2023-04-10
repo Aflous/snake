@@ -1,0 +1,34 @@
+select = [
+    "F",    # Pyflakes
+    "E",    # pycodestyle Error
+    "W",    # pycodestyle Warning
+    "C90",  # mccabe
+    "I",    # isort
+    "N",    # pep-8-naming
+    "YTT",  # flake8-2020
+    "ANN",  # flake8-annotations
+    "S",    # flake8-bandit
+    "BLE",  # flake8-blind-except
+    "B",    # flake8-bugbear
+    "A",    # flake8-builtins
+    "C4",   # flake8-comprehensions
+    "DTZ",  # flake8-datetimez
+    "EM",   # flake8-errmsg
+    "ISC",  # flake8-implicit-str-concat
+    "G",    # flake8-logging-format
+    "PIE",  # flake8-pie
+    "PT",   # flake8-pytest-style
+    "RET",  # flake8-return
+    "SIM",  # flake8-simplify
+    "ERA",  # eradicate
+    "PL",   # PyLint
+    "TRY",  # tryceratops
+    "RUF",  # Ruff-specific rules
+]
+ 
+ignore = [
+    "ANN101",  # Expects to annotate self, not usefull since mypy is already checking this
+    "ANN102",  # Expects to annotate cls, not usefull since mypy is already checking this
+]
+line-length = 120
+target-version = "py311"
